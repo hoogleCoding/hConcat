@@ -11,5 +11,6 @@ concatFiles destination files = do
     hClose handle     
     where
         writeToDestination wHandle file = hPutStr wHandle =<< readFile file
+
 main :: IO()
 main = getArgs >>= concatFiles <$> last <*> init
