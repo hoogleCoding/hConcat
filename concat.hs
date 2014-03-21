@@ -1,3 +1,4 @@
+-- Written by Florian Hug <florian.hug@gmail.com>
 import System.Environment (getArgs)
 import System.IO (hClose, hPutStr, openFile, IOMode(WriteMode))
 
