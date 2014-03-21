@@ -1,4 +1,6 @@
 -- Written by Florian Hug <florian.hug@gmail.com>
+import Control.Applicative ((<*>))
+import Data.Functor ((<$>))
 import System.Environment (getArgs)
 import System.IO (hClose, hPutStr, openFile, IOMode(WriteMode))
 
