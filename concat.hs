@@ -10,6 +10,4 @@ concatFiles destination files = do
     where
         writeToDestination wHandle file = hPutStr wHandle =<< readFile file
 
-main = 
-    getArgs >>=
-    \args -> concatFiles (last args) (init args)
+main = getArgs >>= concatFiles <$> last <*> init
